@@ -1,0 +1,73 @@
+import { Link } from 'react-router-dom';
+
+function Footer() {
+  return (
+    <footer className="bg-gray-800 text-gray-300 pt-10 pb-6 relative">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="flex flex-col gap-6">
+          <div className="flex items-center gap-3">
+            <div className="leading-tight">
+              <h1 className="font-bold text-lg">Prosofia</h1>
+            </div>
+          </div>
+
+          <div className="space-y-1">
+            <h2 className="text-xl font-semibold text-white">Ingin Coba Prosofia?</h2>
+            <p className="text-sm text-gray-300">Hubungi kami sekarang dan jadwalkan demo gratis!</p>
+           
+          </div>
+
+          <div className="space-y-3 text-sm">
+            <div>
+              <h3 className="text-yellow-400 font-medium">WhatsApp</h3>
+              <a
+                href="https://wa.me/6282221992911"
+                target="_blank"
+                className="text-gray-400 hover:text-yellow-300 transition"
+              >
+                08xx-xxxx-xxxx
+              </a>
+            </div>
+
+             <div>
+              <h3 className="text-yellow-400 font-medium">Email</h3>
+              <a
+                href="mailto:info@bmsindonesia.my.id"
+                className="text-gray-400 hover:text-yellow-300 transition"
+              >
+               info@prosofia.id
+              </a>
+            </div>
+          </div>
+        </div>
+
+        
+        <div className="flex flex-col justify-between gap-8">
+          <div className="mt-6 flex flex-col gap-10 justify-center">
+
+            <div>
+                <h3 className="text-yellow-400 font-medium">Alamat Kantor</h3>
+                <p className="text-gray-400 leading-relaxed">
+                Jl. Moch Sahar<br />
+                Sisir, Kec. Batu, Kota Batu, Jawa Timur
+                </p>
+            </div>
+          
+            <div>
+                <h3 className="text-yellow-400 font-medium">CTA di Setiap Halaman</h3>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <hr className="my-6 border-gray-700" />
+
+      <div className="text-center text-xs text-gray-500">
+        &copy; {new Date().getFullYear()} Prosofia. All rights reserved.
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;
