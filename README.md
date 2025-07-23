@@ -1,7 +1,10 @@
 # Prosofia
-##############
-npm install before run the project
-*
-npm build for development
-*
-npm run dev for runing your programs
+
+Sistem Manajemen Digital untuk Pengelolaan Penjualan Kavling & Perumahan.
+
+## 🚀 Instalasi
+
+Pastikan Anda sudah menginstall Node.js dan npm di sistem Anda.
+
+```bash
+npm install
