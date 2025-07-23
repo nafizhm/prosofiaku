@@ -48,17 +48,18 @@ function Navbar() {
               <li><a href="#testi" className="relative inline-block">Testimoni</a></li>
             </ul>
 
-            <a
-              href='https://wa.me/6282221992911'
-              className='relative group overflow-hidden bg-yellow-300 ml-5 text-gray-700 font-semibold py-2 px-5 text-sm cursor-pointer rounded-md min-w-[120px] h-10 flex items-center justify-center'
-            >
-              <span className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-300 group-hover:translate-y-full whitespace-nowrap'>
-                Kontak Kami
-              </span>
-              <span className='absolute top-0 left-1/2 -translate-x-1/2 -translate-y-full transition-all duration-300 group-hover:translate-y-1/2 whitespace-nowrap'>
-                Let's Talk
-              </span>
-            </a>
+          <Link
+            to="/contact"
+            className='relative group overflow-hidden bg-yellow-300 ml-5 text-gray-700 font-semibold py-2 px-5 text-sm cursor-pointer rounded-md min-w-[120px] h-10 flex items-center justify-center'
+          >
+            <span className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-300 group-hover:translate-y-full whitespace-nowrap'>
+              Kontak Kami
+            </span>
+            <span className='absolute top-0 left-1/2 -translate-x-1/2 -translate-y-full transition-all duration-300 group-hover:translate-y-1/2 whitespace-nowrap'>
+              Let's Talk
+            </span>
+          </Link>
+
           </div>
         </div>
 

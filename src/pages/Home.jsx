@@ -16,9 +16,18 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
+import img1 from '../assets/gallery/1.webp';
+import img2 from '../assets/gallery/2.webp';
+import img3 from '../assets/gallery/3.webp';
+import img4 from '../assets/gallery/4.webp';
+import img5 from '../assets/gallery/5.webp';
+import { Link } from 'react-router-dom';
 
 
 function Home() {
+    const images = [img1, img2, img3, img4, img5];
+    const [selectedImage, setSelectedImage] = useState(null);
+
     const imageRef = useRef(null);
     const { scrollYProgress } = useScroll({
     target: imageRef,
@@ -67,13 +76,12 @@ function Home() {
                     <FaPlay /> Lihat Demo
                     </button>
 
-                    <a
-                    href="https://wa.me/6282114966123?text=Hello%20Lisensia%20Apps!."
-                    target="_blank"
+                    <Link
+                    to="/form"
                     className="btn bg-yellow-400 text-gray-600 px-6 py-3 rounded font-medium"
                     >
                     Minta Penawaran
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>
@@ -359,26 +367,67 @@ function Home() {
                     </div>
         </section>
         
-       <section id="demo" className="h-screen py-10 px-5">
-        <div className="max-w-7xl mx-auto text-center mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-600" data-aos="fade">
-            Lihat Langsung Cara Kerja <span className='text-yellow-400'>Prosofia</span>
-            </h1>
-        </div>
-
-        <div className="max-w-5xl mx-auto rounded-xl overflow-hidden shadow-lg" data-aos="zoom-in">
-            <div className="relative pb-[56.25%] h-0">
-            <iframe
-                className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/9tD-fpGTNno?autoplay=1&mute=1&controls=1&rel=0"
-                title="Demo Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-            ></iframe>
+        <section id="demo" className="h-auto py-10 px-5">
+            <div className="max-w-7xl mx-auto text-center mb-12">
+                <h1 className="text-3xl md:text-4xl font-bold text-gray-600" data-aos="fade">
+                Lihat Langsung Cara Kerja <span className="text-yellow-400">Prosofia</span>
+                </h1>
             </div>
-        </div>
+
+            <div className="max-w-5xl mx-auto rounded-xl overflow-hidden shadow-lg mb-10" data-aos="zoom-in">
+                <div className="relative pb-[56.25%] h-0">
+                <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/9tD-fpGTNno?autoplay=1&mute=1&controls=1&rel=0"
+                    title="Demo Video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                ></iframe>
+                </div>
+            </div>
+
+            <div className="max-w-5xl mx-auto" data-aos="fade-up">
+                <h2 className="text-2xl font-semibold text-gray-700 mb-6 text-center">Galeri Tampilan</h2>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                {images.map((img, index) => (
+                    <div
+                    key={index}
+                    className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer"
+                    onClick={() => setSelectedImage(img)}
+                    >
+                    <img
+                        src={img}
+                        alt={`Galeri ${index + 1}`}
+                        className="w-full h-full object-cover"
+                    />
+                    </div>
+                ))}
+                </div>
+            </div>
+            {selectedImage && (
+                <div
+                className="fixed inset-0 z-50 bg-black/30 backdrop-blur-md flex items-center justify-center"
+                onClick={() => setSelectedImage(null)}
+                >
+                <div className="relative max-w-4xl max-h-[90vh] p-4">
+                    <button
+                    className="absolute top-2 right-2 text-white text-3xl font-bold z-10"
+                    onClick={() => setSelectedImage(null)}
+                    >
+                    &times;
+                    </button>
+                    <img
+                    src={selectedImage}
+                    alt="Preview"
+                    className="w-full max-h-[80vh] object-contain rounded-xl shadow-2xl"
+                    />
+                </div>
+                </div>
+            )}
         </section>
+
+
     
         <section id="harga" className="h-auto py-10 px-5 bg-white">
                 <div className="max-w-7xl mx-auto text-center mb-12">
