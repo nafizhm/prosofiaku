@@ -44,7 +44,7 @@ function Footer() {
         
         <div className="flex flex-col justify-between gap-8">
           <div className="mt-6 flex flex-col gap-10 justify-center">
-
+    
             <div>
                 <h3 className="text-yellow-400 font-medium">Alamat Kantor</h3>
                 <p className="text-gray-400 leading-relaxed">
