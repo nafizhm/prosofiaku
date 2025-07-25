@@ -78,7 +78,7 @@ function Form() {
     const response = await axios.post('https://api.watzap.id/v1/send_message', {
       api_key: 'CQBZLJP8VFITUMIC',
       number_key: 'uGcdufWF62yz7NO4',
-      phone_no: '6285691623856',
+      phone_no: '6281250274777',
       message: message,
       type: 'text'
     });
