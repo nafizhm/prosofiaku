@@ -21,6 +21,7 @@ import img2 from '../assets/gallery/2.webp';
 import img3 from '../assets/gallery/3.webp';
 import img4 from '../assets/gallery/4.webp';
 import img5 from '../assets/gallery/5.webp';
+import DashboardIcon from '../assets/DashboardIcon.svg';
 import { Link } from 'react-router-dom';
 
 
@@ -59,8 +60,8 @@ function Home() {
             <div className="absolute inset-0 z-[-1] pointer-events-none">
                 <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-yellow-400 to-transparent" />
             </div>
-
-            <div className="max-w-5xl max-sm:space-y-4 space-y-6">
+            <div className="max-w-5xl justify-center flex flex-col items-center max-sm:space-y-4 space-y-6">
+            <img src={DashboardIcon} className='hidden max-sm:block w-sm' data-aos="fade" data-aos-duration="2500"/>
                 <h1 className="text-4xl max-sm:text-sm font-bold text-gray-600"  data-aos="fade" data-aos-duration="2500">
                 Solusi Digital Manajemen Penjualan Kavling & Perumahan
                     Cepat, Transparan, dan Terintegrasi — Bersama Prosofia
@@ -80,7 +81,7 @@ function Home() {
                     to="/form"
                     className="btn bg-yellow-400 text-gray-600 px-6 py-3 rounded font-medium"
                     >
-                    Minta Penawaran
+                    Coba Demo Gratis
                     </Link>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Logo from '../assets/logo.webp';
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -33,7 +34,7 @@ function Navbar() {
         <div className="container flex items-center justify-between mx-auto">
           <div className="flex items-center">
             <span className="flex flex-col leading-4">
-              <h1 className="font-semibold text-yellow-400 text-lg">Prosofia.</h1>
+              <img src={Logo} className='w-[100px]'/>
             </span>
           </div>
 

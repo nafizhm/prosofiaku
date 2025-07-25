@@ -7,8 +7,8 @@ export default function Sukses() {
       <BsCheckCircle className="text-green-500 text-[6rem] mb-4" />
       <h1 className="text-2xl md:text-3xl font-semibold text-gray-700">Berhasil Dikirim</h1>
       <p className="text-gray-600 mt-2 max-w-md">
-        Terima kasih telah menghubungi <strong>Berkah Mitra Solusi Indo</strong>.
-        Kami telah mengirimkan Anda email konfirmasi dan akan segera menghubungi Anda lebih lanjut.
+        Terima kasih telah mendaftar akun demo ke <strong>Prosofia</strong>.
+        mohon ditunggu sebentar tim kami akan segera memprosesnya.
       </p>
       <Link
         to="/"

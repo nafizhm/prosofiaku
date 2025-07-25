@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-
+import Logo from "../assets/logo.webp";
 function Footer() {
   return (
     <footer className="bg-gray-800 text-gray-300 pt-10 pb-6 relative">
@@ -7,7 +7,7 @@ function Footer() {
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-3">
             <div className="leading-tight">
-              <h1 className="font-bold text-lg">Prosofia</h1>
+              <img src={Logo}  className='w-[100px]'/>
             </div>
           </div>
 
