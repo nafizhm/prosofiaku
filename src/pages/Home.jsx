@@ -2,7 +2,7 @@ import { useScroll, useTransform, motion } from 'framer-motion';
 import { useRef } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import gambar from '../assets/home.png';
+import gambar from '../assets/Home.png';
 import AboutAsset from '../assets/aboutIcon.svg';
 import { useState } from 'react';
 import FloatingWhatsApp from '../components/FloatingWhatsApp';
