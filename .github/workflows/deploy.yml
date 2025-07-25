@@ -26,6 +26,6 @@ jobs:
         server: 147.93.80.48
         username: u775298753.prosofia.id
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: public_html/
+        server-dir: ./
         local-dir: dist/
         port: 21
