@@ -62,11 +62,11 @@ function Home() {
             </div>
             <div className="max-w-5xl justify-center flex flex-col items-center max-sm:space-y-4 space-y-6">
             <img src={DashboardIcon} className='hidden max-sm:block w-sm' data-aos="fade" data-aos-duration="2500"/>
-                <h1 className="text-4xl max-sm:text-sm font-bold text-gray-600"  data-aos="fade" data-aos-duration="2500">
+                <h1 className="text-4xl max-sm:text-lg font-bold text-gray-600"  data-aos="fade" data-aos-duration="2500">
                 Solusi Digital Manajemen Penjualan Kavling & Perumahan
                     Cepat, Transparan, dan Terintegrasi — Bersama Prosofia
                 </h1>
-                <p className="text-gray-700 max-sm:text-xs text-lg" data-aos="fade" data-aos-duration="3000">
+                <p className="text-gray-700 max-sm:text-sm text-lg" data-aos="fade" data-aos-duration="3000">
                 Prosofia adalah aplikasi berbasis web yang dirancang khusus untuk memudahkan developer perumahan dalam mengelola unit kavling, konsumen, dan transaksi, dalam satu platform terpadu.
                 </p>
                 <div className="flex flex-col md:flex-row gap-4 justify-center" data-aos="fade" data-aos-duration="3000">
@@ -171,12 +171,12 @@ function Home() {
                   </div>
 
                   <div className="flex flex-col gap-6 text-center md:text-left">
-                      <h1 className="font-bold text-md md:text-4xl text-gray-600 selection:bg-yellow-500" data-aos="fade"   data-aos-duration="2500"> Mitra Digital Developer Properti di Era Modern</h1>
+                      <h1 className="font-bold text-lg md:text-4xl text-gray-600 selection:bg-yellow-500" data-aos="fade"   data-aos-duration="2500"> Mitra Digital Developer Properti di Era Modern</h1>
 
-                      <p className="text-gray-700 md:w-xl text-xs md:text-lg selection:bg-yellow-500" data-aos="fade-up">
+                      <p className="text-gray-700 md:w-xl text-sm md:text-lg selection:bg-yellow-500" data-aos="fade-up">
                         Prosofia merupakan produk dari PT Berkah Mitra Solusindo (BMS), sebuah perusahaan yang berfokus pada penyediaan solusi digital berbasis web. Kami percaya bahwa kemajuan teknologi harus dimanfaatkan untuk menciptakan efisiensi, transparansi, dan kemudahan dalam manajemen proyek properti.
                       </p>
-                      <p className='text-gray-700 md:w-lg text-xs md:text-lg selection:bg-yellow-500' data-aos="fade-up"> Kami hadir untuk menjadi mitra terbaik Anda dalam mengelola proyek perumahan — dari pengaturan kavling, pemantauan progres pembayaran, hingga pelaporan instan.</p>
+                      <p className='text-gray-700 md:w-lg text-sm md:text-lg selection:bg-yellow-500' data-aos="fade-up"> Kami hadir untuk menjadi mitra terbaik Anda dalam mengelola proyek perumahan — dari pengaturan kavling, pemantauan progres pembayaran, hingga pelaporan instan.</p>
                   </div>
                 </div>
         </section>
@@ -200,7 +200,7 @@ function Home() {
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">
                             Manajemen Kavling
                         </h3>
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-gray-600 text-md">
                             Input, atur, dan pantau status unit kavling (tersedia, booking, terjual) dalam tampilan visual peta.
                         </p>
                     </div>
@@ -216,7 +216,7 @@ function Home() {
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">
                             Manajemen Konsumen
                         </h3>
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-gray-600 text-md">
                             Simpan dan kelola data customer, histori pembayaran, serta dokumen penting dalam satu tempat.
                         </p>
                     </div>
@@ -232,7 +232,7 @@ function Home() {
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">
                             Simulasi & Jadwal Pembayaran
                         </h3>
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-gray-600 text-md">
                             Atur skema pembayaran, cicilan, dan pantau progresnya secara otomatis.
                         </p>
                     </div>
@@ -248,7 +248,7 @@ function Home() {
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">
                             Dokumentasi & Pengarsipan
                         </h3>
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-gray-600 text-md">
                             Upload dan simpan dokumen (KTP, NPWP, SPK, dll) untuk masing-masing unit secara aman dan terorganisir.
                         </p>
                     </div>
@@ -264,7 +264,7 @@ function Home() {
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">
                             Invoice & Kuitansi Otomatis
                         </h3>
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-gray-600 text-md">
                             Buat dan cetak invoice & kuitansi dengan logo perusahaan Anda dalam hitungan detik.
                         </p>
                     </div>
@@ -280,7 +280,7 @@ function Home() {
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">
                             Invoice & Kuitansi Otomatis
                         </h3>
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-gray-600 text-md">
                             Buat dan cetak invoice & kuitansi dengan logo perusahaan Anda dalam hitungan detik.
                         </p>
                     </div>
