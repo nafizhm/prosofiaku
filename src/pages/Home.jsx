@@ -66,7 +66,7 @@ function Home() {
                 Solusi Digital Manajemen Penjualan Kavling & Perumahan
                     Cepat, Transparan, dan Terintegrasi — Bersama Prosofia
                 </h1>
-                <p className="text-gray-700 max-sm:text-sm text-lg" data-aos="fade" data-aos-duration="3000">
+                <p className="text-gray-700  text-lg" data-aos="fade" data-aos-duration="3000">
                 Prosofia adalah aplikasi berbasis web yang dirancang khusus untuk memudahkan developer perumahan dalam mengelola unit kavling, konsumen, dan transaksi, dalam satu platform terpadu.
                 </p>
                 <div className="flex flex-col md:flex-row gap-4 justify-center" data-aos="fade" data-aos-duration="3000">
@@ -141,8 +141,8 @@ function Home() {
 
        <section className="h-auto max-sm:-top-44 min-md:top-44 min-lg:top-40 relative py-10 overflow-hidden">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-600 selection:bg-yellow-500" data-aos="fade">Our Client</h2>
-            <p className="text-gray-600 mt-2 text-xs md:text-sm w-xs md:w-2xl mx-auto selection:bg-yellow-500 selection:text-white" data-aos="fade">
+            <h2 className="text-3xl font-bold text-gray-600 selection:bg-yellow-500" data-aos="fade">Our Client</h2>
+            <p className="text-gray-600 mt-2 text-lg md:text-sm w-xs md:w-2xl mx-auto selection:bg-yellow-500 selection:text-white" data-aos="fade">
               Kami dipercaya oleh berbagai perusahaan ternama dan brand terbaik di Indonesia. 
               Berikut adalah beberapa klien yang telah bekerja sama dengan kami.
             </p>
@@ -163,7 +163,7 @@ function Home() {
             </div>
         </section>
 
-        <section id='about' className='h-auto flex flex-col justify-center text-center items-center gap-20 md:mt-44 sm:mt-0 max-sm:-top-44 relative'>
+        <section id='about' className='h-auto flex flex-col justify-center text-center items-center mx-3 gap-20 md:mt-44 sm:mt-0 max-sm:-top-44 relative'>
            <div className="flex flex-col-reverse lg:flex-row items-center gap-10 w-full">
 
                   <div className="w-full md:w-1/2 flex justify-center">
@@ -171,12 +171,12 @@ function Home() {
                   </div>
 
                   <div className="flex flex-col gap-6 text-center md:text-left">
-                      <h1 className="font-bold text-lg md:text-4xl text-gray-600 selection:bg-yellow-500" data-aos="fade"   data-aos-duration="2500"> Mitra Digital Developer Properti di Era Modern</h1>
+                      <h1 className="font-bold text-xl md:text-4xl text-gray-600 selection:bg-yellow-500" data-aos="fade"   data-aos-duration="2500"> Mitra Digital Developer Properti di Era Modern</h1>
 
-                      <p className="text-gray-700 md:w-xl text-sm md:text-lg selection:bg-yellow-500" data-aos="fade-up">
+                      <p className="text-gray-700 md:w-xl text-lg md:text-lg selection:bg-yellow-500" data-aos="fade-up">
                         Prosofia merupakan produk dari PT Berkah Mitra Solusindo (BMS), sebuah perusahaan yang berfokus pada penyediaan solusi digital berbasis web. Kami percaya bahwa kemajuan teknologi harus dimanfaatkan untuk menciptakan efisiensi, transparansi, dan kemudahan dalam manajemen proyek properti.
                       </p>
-                      <p className='text-gray-700 md:w-lg text-sm md:text-lg selection:bg-yellow-500' data-aos="fade-up"> Kami hadir untuk menjadi mitra terbaik Anda dalam mengelola proyek perumahan — dari pengaturan kavling, pemantauan progres pembayaran, hingga pelaporan instan.</p>
+                      <p className='text-gray-700 md:w-lg text-lg md:text-lg selection:bg-yellow-500' data-aos="fade-up"> Kami hadir untuk menjadi mitra terbaik Anda dalam mengelola proyek perumahan — dari pengaturan kavling, pemantauan progres pembayaran, hingga pelaporan instan.</p>
                   </div>
                 </div>
         </section>
@@ -197,7 +197,7 @@ function Home() {
                             </div>
                         </div>
 
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                             Manajemen Kavling
                         </h3>
                         <p className="text-gray-600 text-md">
@@ -213,7 +213,7 @@ function Home() {
                             </div>
                         </div>
                         
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                             Manajemen Konsumen
                         </h3>
                         <p className="text-gray-600 text-md">
@@ -229,7 +229,7 @@ function Home() {
                             </div>
                         </div>
                     
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                             Simulasi & Jadwal Pembayaran
                         </h3>
                         <p className="text-gray-600 text-md">
@@ -245,7 +245,7 @@ function Home() {
                             </div>
                         </div>
                         
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                             Dokumentasi & Pengarsipan
                         </h3>
                         <p className="text-gray-600 text-md">
@@ -261,7 +261,7 @@ function Home() {
                             </div>
                         </div>
                     
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                             Invoice & Kuitansi Otomatis
                         </h3>
                         <p className="text-gray-600 text-md">
@@ -277,7 +277,7 @@ function Home() {
                             </div>
                         </div>
                     
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                             Invoice & Kuitansi Otomatis
                         </h3>
                         <p className="text-gray-600 text-md">
