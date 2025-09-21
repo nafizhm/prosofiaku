@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import Logo from "../assets/logo.webp";
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-gray-300 pt-10 pb-6 relative">
+    <footer className="bg-gray-600 text-gray-300 pt-10 pb-6 relative">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-3">
@@ -23,7 +23,7 @@ function Footer() {
               <a
                 href="https://wa.me/6282221992911"
                 target="_blank"
-                className="text-gray-400 hover:text-yellow-300 transition"
+                className="text-white hover:text-yellow-300 transition"
               >
                 08xx-xxxx-xxxx
               </a>
@@ -33,7 +33,7 @@ function Footer() {
               <h3 className="text-yellow-400 font-medium">Email</h3>
               <a
                 href="mailto:info@bmsindonesia.my.id"
-                className="text-gray-400 hover:text-yellow-300 transition"
+                className="text-white hover:text-yellow-300 transition"
               >
                info@prosofia.id
               </a>
@@ -47,16 +47,12 @@ function Footer() {
     
             <div>
                 <h3 className="text-yellow-400 font-medium">Alamat Kantor</h3>
-                <p className="text-gray-400 leading-relaxed">
-                Jl. Moch Sahar<br />
-                Sisir, Kec. Batu, Kota Batu, Jawa Timur
+                <p className="text-white leading-relaxed">
+                Jl. Moch Sahar Gg I No. 34<br />
+                Ngaglik Kota Batu Jawa Timur
                 </p>
             </div>
           
-            <div>
-                <h3 className="text-yellow-400 font-medium">CTA di Setiap Halaman</h3>
-            </div>
-
           </div>
         </div>
       </div>

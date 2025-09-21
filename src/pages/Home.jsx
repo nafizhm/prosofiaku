@@ -23,6 +23,7 @@ import img4 from '../assets/gallery/4.webp';
 import img5 from '../assets/gallery/5.webp';
 import DashboardIcon from '../assets/DashboardIcon.svg';
 import { Link } from 'react-router-dom';
+import { FaMapMarkedAlt } from "react-icons/fa";
 
 
 function Home() {
@@ -273,15 +274,15 @@ function Home() {
                         <div className="relative w-10 h-10 mb-4">
                             <div className="absolute inset-0 scale-125 bg-red-400 opacity-50 rounded-full z-0"></div>
                             <div className="relative z-10 bg-red-400 text-white rounded-full w-full h-full flex items-center justify-center">
-                            <FaRegChartBar className="text-lg" />
+                            <FaMapMarkedAlt className="text-lg" />
                             </div>
                         </div>
                     
                         <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                            Invoice & Kuitansi Otomatis
+                            Siteplan Dinamis
                         </h3>
                         <p className="text-gray-600 text-md">
-                            Buat dan cetak invoice & kuitansi dengan logo perusahaan Anda dalam hitungan detik.
+                            status penjualan dan progress pembangunan untuk tersaji dalam  bentuk siteplan dinamis dan realtime
                         </p>
                     </div>
 
@@ -437,19 +438,53 @@ function Home() {
                     </h1>
                 </div>
 
-                <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+                <div className="max-w-5xl mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-8">
                     <div className="bg-white cursor-pointer hover:scale-110  transition-transform rounded-xl border border-gray-300 shadow-md hover:shadow-lg  duration-300 p-6 flex flex-col justify-between">
                     <div>
                         <div className="border-b pb-4 mb-4">
                         <h2 className="text-3xl font-bold text-yellow-500">
-                            IDR 249.000 <span className="text-sm font-normal text-gray-500">/ bulan</span>
+                            IDR 2.000.000 <span className="text-sm font-normal text-gray-500">/ tahun</span>
                         </h2>
-                        <p className="text-sm font-medium text-gray-700 mt-1">Basic</p>
-                        <p className="text-gray-500 text-sm">Paket langganan dengan fitur dasar untuk memulai</p>
+                        <p className="text-sm font-medium text-gray-700 mt-1">Bayar sesuai Fitur</p>
+                        <p className="text-gray-500 text-sm">Paket aplikasi sesuai modul pilihan</p>
                         </div>
 
                         <ul className="space-y-3 text-sm text-gray-800">
-                        {["Manajemen Kavling", "Konsumen", "Laporan Dasar"].map((item, i) => (
+                        {["pilih modul yang diperlukan saja"].map((item, i) => (
+                            <li key={i} className="flex items-center gap-2">
+                            <span className="bg-green-100 text-green-600 p-2 rounded-full text-xs">
+                                <FaCheck />
+                            </span>
+                            {item}
+                            </li>
+                        ))}
+                        </ul>
+                    </div>
+
+                    <div className="mt-6">
+                        <a
+                        href="https://wa.me/6282114966123?text=Halo%20saya%20ingin%20berlangganan%20Prosofia%20paket%20Basic"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block text-center border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white transition-transform px-5 py-2 rounded-md font-medium text-sm"
+                        >
+                        Order Now
+                        </a>
+                    </div>
+                    </div>
+
+                    <div className="bg-white cursor-pointer hover:scale-110  transition-transform rounded-xl border border-gray-300 shadow-md hover:shadow-lg  duration-300 p-6 flex flex-col justify-between">
+                    <div>
+                        <div className="border-b pb-4 mb-4">
+                        <h2 className="text-3xl font-bold text-yellow-500">
+                            IDR 4.000.000 <span className="text-sm font-normal text-gray-500">/ tahun</span>
+                        </h2>
+                        <p className="text-sm font-medium text-gray-700 mt-1">Sewa</p>
+                        <p className="text-gray-500 text-sm">Paket langganan dengan fitur Lengkap</p>
+                        </div>
+
+                        <ul className="space-y-3 text-sm text-gray-800">
+                        {["Manajemen Penjualan", "Manajemen Pembayaran", "Manajemen Pengajuan Kredit"].map((item, i) => (
                             <li key={i} className="flex items-center gap-2">
                             <span className="bg-green-100 text-green-600 p-2 rounded-full text-xs">
                                 <FaCheck />
@@ -476,18 +511,15 @@ function Home() {
                     <div>
                         <div className="border-b pb-4 mb-4">
                         <h2 className="text-3xl font-bold text-yellow-500">
-                            IDR 499.000 <span className="text-sm font-normal text-gray-500">/ bulan</span>
+                            IDR 12.000.000 <span className="text-sm font-normal text-gray-500">/ sekali bayar</span>
                         </h2>
-                        <p className="text-sm font-medium text-gray-700 mt-1">Pro</p>
-                        <p className="text-gray-500 text-sm">Solusi lengkap dengan fitur lanjutan untuk pengelolaan proyek</p>
+                        <p className="text-sm font-medium text-gray-700 mt-1">Custome Sesuai dengan Kebutuhan perusahaan anda</p>
+                        <p className="text-gray-500 text-sm">Paket aplikasi akan menyesuaikan dengan proses bisnis anda</p>
                         </div>
 
                         <ul className="space-y-3 text-sm text-gray-800">
                         {[
-                            "Semua fitur Basic",
-                            "Invoice Otomatis",
-                            "Dokumen",
-                            "Simulasi Pembayaran",
+                            "kita diskusikan dan kami bantu implementasikan",
                         ].map((item, i) => (
                             <li key={i} className="flex items-center gap-2">
                             <span className="bg-green-100 text-green-600 p-2 rounded-full text-xs">
@@ -510,6 +542,45 @@ function Home() {
                         </a>
                     </div>
                     </div>
+                    
+                    <div className="bg-white hover:scale-110  transition-transform cursor-pointer rounded-xl border border-gray-300 shadow-md hover:shadow-lg duration-300 p-6 flex flex-col justify-between">
+                    <div>
+                        <div className="border-b pb-4 mb-4">
+                        <h2 className="text-3xl font-bold text-yellow-500">
+                            IDR 15.000.000 <span className="text-sm font-normal text-gray-500">/ sekali bayar</span>
+                        </h2>
+                        <p className="text-sm font-medium text-gray-700 mt-1">Beli Putus</p>
+                        <p className="text-gray-500 text-sm">Paket aplikasi sekali bayar tanpa berlangganan</p>
+                        </div>
+
+                        <ul className="space-y-3 text-sm text-gray-800">
+                        {[
+                            "Manajemen Penjualan",
+                            "Manajemen Pembayaran",
+                            "Manajemen Pengajuan Kredit",
+                        ].map((item, i) => (
+                            <li key={i} className="flex items-center gap-2">
+                            <span className="bg-green-100 text-green-600 p-2 rounded-full text-xs">
+                                <FaCheck />
+                            </span>
+                            {item}
+                            </li>
+                        ))}
+                        </ul>
+                    </div>
+
+                    <div className="mt-6">
+                        <a
+                        href="https://wa.me/6282114966123?text=Halo%20saya%20tertarik%20dengan%20paket%20Pro%20Prosofia"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block text-center border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white  px-5 py-2 rounded-md font-medium text-sm"
+                        >
+                        Order Now
+                        </a>
+                    </div>
+                    </div>
+                    
                 </div>
             </section>
         
