@@ -21,13 +21,14 @@ import img2 from '../assets/gallery/2.webp';
 import img3 from '../assets/gallery/3.webp';
 import img4 from '../assets/gallery/4.webp';
 import img5 from '../assets/gallery/5.webp';
+import img6 from '../assets/gallery/6.jpg';
 import DashboardIcon from '../assets/DashboardIcon.svg';
 import { Link } from 'react-router-dom';
 import { FaMapMarkedAlt } from "react-icons/fa";
 
 
 function Home() {
-    const images = [img1, img2, img3, img4, img5];
+    const images = [img1, img2, img3, img4, img5, img6];
     const [selectedImage, setSelectedImage] = useState(null);
 
     const imageRef = useRef(null);
