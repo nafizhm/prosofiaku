@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Logo from "../assets/logo.webp";
 function Footer() {
   return (
@@ -7,61 +7,49 @@ function Footer() {
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-3">
             <div className="leading-tight">
-              <img src={Logo}  className='w-[100px]'/>
+              <img src={Logo} className="w-[100px]" />
             </div>
           </div>
 
           <div className="space-y-1">
             <h2 className="text-xl font-semibold text-white">Ingin Coba Prosofia?</h2>
             <p className="text-sm text-gray-300">Hubungi kami sekarang dan jadwalkan demo gratis!</p>
-           
           </div>
 
           <div className="space-y-3 text-sm">
             <div>
               <h3 className="text-yellow-400 font-medium">WhatsApp</h3>
-              <a
-                href="https://wa.me/6282221992911"
-                target="_blank"
-                className="text-white hover:text-yellow-300 transition"
-              >
-                08xx-xxxx-xxxx
+              <a href="https://wa.me/6282221992911" target="_blank" className="text-white hover:text-yellow-300 transition">
+                 0822 2199 2911
               </a>
             </div>
 
-             <div>
+            <div>
               <h3 className="text-yellow-400 font-medium">Email</h3>
-              <a
-                href="mailto:info@bmsindonesia.my.id"
-                className="text-white hover:text-yellow-300 transition"
-              >
-               info@prosofia.id
+              <a href="mailto:info@prosofia.id" className="text-white hover:text-yellow-300 transition">
+                info@prosofia.id / marketingprosofia@gmail.com
               </a>
             </div>
           </div>
         </div>
 
-        
         <div className="flex flex-col justify-between gap-8">
           <div className="mt-6 flex flex-col gap-10 justify-center">
-    
             <div>
-                <h3 className="text-yellow-400 font-medium">Alamat Kantor</h3>
-                <p className="text-white leading-relaxed">
-                Jl. Moch Sahar Gg I No. 34<br />
+              <h3 className="text-yellow-400 font-medium">Alamat Kantor</h3>
+              <p className="text-white leading-relaxed">
+                Jl. Moch Sahar Gg I No. 34
+                <br />
                 Ngaglik Kota Batu Jawa Timur
-                </p>
+              </p>
             </div>
-          
           </div>
         </div>
       </div>
 
       <hr className="my-6 border-gray-700" />
 
-      <div className="text-center text-xs text-gray-500">
-        &copy; {new Date().getFullYear()} Prosofia. All rights reserved.
-      </div>
+      <div className="text-center text-xs text-gray-500">&copy; {new Date().getFullYear()} Prosofia. All rights reserved.</div>
     </footer>
   );
 }
