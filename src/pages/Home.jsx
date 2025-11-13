@@ -41,7 +41,7 @@ function Home() {
     const [showModal, setShowModal] = useState(false);
 
     const allImages = Object.values(
-    import.meta.glob('/src/assets/{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22}.webp', {
+    import.meta.glob('/src/assets/{1,2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19,20,21,22}.webp', {
         eager: true,
         import: 'default',
     })
@@ -287,8 +287,62 @@ function Home() {
                         </p>
                     </div>
 
+
+
+                    <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="250">
+                        <div className="relative w-10 h-10 mb-4">
+                            <div className="absolute inset-0 scale-125 bg-orange-400 opacity-50 rounded-full z-0"></div>
+                            <div className="relative z-10 bg-orange-400 text-white rounded-full w-full h-full flex items-center justify-center">
+                            <FaFolderOpen className="text-lg" />
+                            </div>
+                        </div>
+                        
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                            Pengelolaan Keuangan
+                        </h3>
+                        <p className="text-gray-600 text-md">
+                            Pengelolaan keuangan yang terintegrasi memudahkan dalam melakukan pelaporan.
+                        </p>
+                    </div>
+                    
+                    <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <div className="relative w-10 h-10 mb-4">
+                            <div className="absolute inset-0 scale-125 bg-gray-400 opacity-50 rounded-full z-0"></div>
+                            <div className="relative z-10 bg-gray-400 text-white rounded-full w-full h-full flex items-center justify-center">
+                            <FaRegFileAlt className="text-lg" />
+                            </div>
+                        </div>
+                    
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                            Stok Obname Bangunan
+                        </h3>
+                        <p className="text-gray-600 text-md">
+                            Modul Pengelolaan Obname bangunan yang dapat menampilkan progres realtime dari project yang sedang berjalan.
+                        </p>
+                    </div>
+                    
+                    <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="350">
+                        <div className="relative w-10 h-10 mb-4">
+                            <div className="absolute inset-0 scale-125 bg-red-400 opacity-50 rounded-full z-0"></div>
+                            <div className="relative z-10 bg-red-400 text-white rounded-full w-full h-full flex items-center justify-center">
+                            <FaMapMarkedAlt className="text-lg" />
+                            </div>
+                        </div>
+                    
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                            Pengelolaan Gudang Material
+                        </h3>
+                        <p className="text-gray-600 text-md">
+                            Pengelolaan Stok material dan penggunaan bahan Material bangunan untuk setiap project akan terpantau secara akurat
+                        </p>
+                    </div>
+
                     </div>
         </section>
+
+
+
+
         
         <section id="keunggulan" className="h-auto py-10 px-5">
                 <div className="max-w-7xl mx-auto text-center mb-12">
@@ -363,7 +417,22 @@ function Home() {
                         </div>
                     
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                             Cocok untuk Developer Kecil hingga Menengah
+                             Pengaturan hak akses yang fleksibel untuk setiap pengguna
+                        </h3>
+                      
+                    </div>
+
+
+                    <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <div className="relative w-10 h-10 mb-4">
+                            <div className="absolute inset-0 scale-125 bg-gray-400 opacity-50 rounded-full z-0"></div>
+                            <div className="relative z-10 bg-gray-400 text-white rounded-full w-full h-full flex items-center justify-center">
+                            <FaCode  className="text-lg" />
+                            </div>
+                        </div>
+                    
+                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                             Cocok untuk Developer Skala Kecil hingga Besar
                         </h3>
                       
                     </div>
@@ -469,7 +538,7 @@ function Home() {
 
                     <div className="mt-6">
                         <a
-                        href="https://wa.me/6282114966123?text=Halo%20saya%20ingin%20berlangganan%20Prosofia%20paket%20Basic"
+                        href="https://wa.me/6281250274777?text=Halo%20saya%20ingin%20berlangganan%20Prosofia%20paket%20Kavling"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block text-center border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white transition-transform px-5 py-2 rounded-md font-medium text-sm"
@@ -507,7 +576,7 @@ function Home() {
 
                     <div className="mt-6">
                         <a
-                        href="https://wa.me/6282114966123?text=Halo%20saya%20ingin%20berlangganan%20Prosofia%20paket%20Basic"
+                        href="https://wa.me/6281250274777?text=Halo%20saya%20ingin%20berlangganan%20Prosofia%20paket%20Silver"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block text-center border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white transition-transform px-5 py-2 rounded-md font-medium text-sm"
@@ -548,7 +617,7 @@ function Home() {
 
                     <div className="mt-6">
                         <a
-                        href="https://wa.me/6282114966123?text=Halo%20saya%20tertarik%20dengan%20paket%20Pro%20Prosofia"
+                        href="https://wa.me/6281250274777?text=Halo%20saya%20tertarik%20dengan%20paket%20Gold%20Prosofia"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block text-center border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white  px-5 py-2 rounded-md font-medium text-sm"
@@ -590,7 +659,7 @@ function Home() {
 
                     <div className="mt-6">
                         <a
-                        href="https://wa.me/6282114966123?text=Halo%20saya%20tertarik%20dengan%20paket%20Pro%20Prosofia"
+                        href="https://wa.me/6281250274777?text=Halo%20saya%20tertarik%20dengan%20paket%20Enterprise%20Prosofia"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block text-center border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white  px-5 py-2 rounded-md font-medium text-sm"
