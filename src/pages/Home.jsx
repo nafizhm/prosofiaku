@@ -444,14 +444,19 @@ function Home() {
                     <div>
                         <div className="border-b pb-4 mb-4">
                         <h2 className="text-3xl font-bold text-yellow-500">
-                            IDR 2.000.000 <span className="text-sm font-normal text-gray-500">/ tahun</span>
+                            IDR 2.000.000 <span className="text-sm font-normal text-gray-500"></span>
                         </h2>
-                        <p className="text-sm font-medium text-gray-700 mt-1">Bayar sesuai Fitur</p>
-                        <p className="text-gray-500 text-sm">Paket aplikasi sesuai modul pilihan</p>
+                        <p className="text-sm font-medium text-gray-700 mt-1">Paket Penjualan Kavling</p>
+                        <p className="text-gray-500 text-sm">Paket aplikasi manajemen penjulan tahah kavling versi lengkap terbaru update 2025</p>
                         </div>
 
                         <ul className="space-y-3 text-sm text-gray-800">
-                        {["pilih modul yang diperlukan saja"].map((item, i) => (
+                        {[
+                            "Domain dan hosting 1 tahun",
+                            "Support 1 Tahun",
+                            "Modul Penjualan",
+
+                        ].map((item, i) => (
                             <li key={i} className="flex items-center gap-2">
                             <span className="bg-green-100 text-green-600 p-2 rounded-full text-xs">
                                 <FaCheck />
@@ -478,14 +483,18 @@ function Home() {
                     <div>
                         <div className="border-b pb-4 mb-4">
                         <h2 className="text-3xl font-bold text-yellow-500">
-                            IDR 4.000.000 <span className="text-sm font-normal text-gray-500">/ tahun</span>
+                            IDR 10.000.000 <span className="text-sm font-normal text-gray-500"></span>
                         </h2>
-                        <p className="text-sm font-medium text-gray-700 mt-1">Sewa</p>
-                        <p className="text-gray-500 text-sm">Paket langganan dengan fitur Lengkap</p>
+                        <p className="text-sm font-medium text-gray-700 mt-1">Paket Silver</p>
+                        <p className="text-gray-500 text-sm">Paket aplikasi manajemen penjualan perumahan modul custom seuai kebutuhan dengan skema berlangganan</p>
                         </div>
 
                         <ul className="space-y-3 text-sm text-gray-800">
-                        {["Manajemen Penjualan", "Manajemen Pembayaran", "Manajemen Pengajuan Kredit"].map((item, i) => (
+                        {[
+                            "Domain dan hosting 1 tahun",
+                            "Support 1 Tahun",
+                            "Modul Penjualan"
+                        ].map((item, i) => (
                             <li key={i} className="flex items-center gap-2">
                             <span className="bg-green-100 text-green-600 p-2 rounded-full text-xs">
                                 <FaCheck />
@@ -512,15 +521,20 @@ function Home() {
                     <div>
                         <div className="border-b pb-4 mb-4">
                         <h2 className="text-3xl font-bold text-yellow-500">
-                            IDR 12.000.000 <span className="text-sm font-normal text-gray-500">/ sekali bayar</span>
+                            IDR 20.000.000 <span className="text-sm font-normal text-gray-500"></span>
                         </h2>
-                        <p className="text-sm font-medium text-gray-700 mt-1">Custome Sesuai dengan Kebutuhan perusahaan anda</p>
-                        <p className="text-gray-500 text-sm">Paket aplikasi akan menyesuaikan dengan proses bisnis anda</p>
+                        <p className="text-sm font-medium text-gray-700 mt-1">Paket Gold</p>
+                        <p className="text-gray-500 text-sm">Paket aplikasi manajemen penjualan perumahan modul lengkap dengan skema berlangganan</p>
                         </div>
 
                         <ul className="space-y-3 text-sm text-gray-800">
                         {[
-                            "kita diskusikan dan kami bantu implementasikan",
+                            "Domain dan hosting 1 tahun",
+                            "Support 1 Tahun",
+                            "Modul Penjualan",
+                            "Modul Proyek",
+                            "Modul Gudang",
+                            "Modul Keuangan",
                         ].map((item, i) => (
                             <li key={i} className="flex items-center gap-2">
                             <span className="bg-green-100 text-green-600 p-2 rounded-full text-xs">
@@ -548,17 +562,21 @@ function Home() {
                     <div>
                         <div className="border-b pb-4 mb-4">
                         <h2 className="text-3xl font-bold text-yellow-500">
-                            IDR 15.000.000 <span className="text-sm font-normal text-gray-500">/ sekali bayar</span>
+                            IDR 30.000.000 <span className="text-sm font-normal text-gray-500"></span>
                         </h2>
-                        <p className="text-sm font-medium text-gray-700 mt-1">Beli Putus</p>
-                        <p className="text-gray-500 text-sm">Paket aplikasi sekali bayar tanpa berlangganan</p>
+                        <p className="text-sm font-medium text-gray-700 mt-1">Paket Enterprise</p>
+                        <p className="text-gray-500 text-sm">Paket aplikasi manajemen penjualan perumahan modul lengkap dengan skema sekali bayar tanpa berlangganan</p>
                         </div>
 
                         <ul className="space-y-3 text-sm text-gray-800">
                         {[
-                            "Manajemen Penjualan",
-                            "Manajemen Pembayaran",
-                            "Manajemen Pengajuan Kredit",
+                            "Domain dan hosting 1 tahun",
+                            "Support 1 Tahun",
+                            "Modul Penjualan",
+                            "Modul Proyek",
+                            "Modul Gudang",
+                            "Modul Keuangan",
+                            "Source Code",
                         ].map((item, i) => (
                             <li key={i} className="flex items-center gap-2">
                             <span className="bg-green-100 text-green-600 p-2 rounded-full text-xs">
