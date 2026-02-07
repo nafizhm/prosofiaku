@@ -20,7 +20,11 @@ function Footer() {
             <div>
               <h3 className="text-yellow-400 font-medium">WhatsApp</h3>
               <a href="https://wa.me/6282221992911" target="_blank" className="text-white hover:text-yellow-300 transition">
-                 0822 2199 2911
+                 0822 2199 2911 - Naufal Ahmad
+              </a>
+              <br></br>
+              <a href="https://wa.me/6281250274777" target="_blank" className="text-white hover:text-yellow-300 transition">
+                 0812 5027 4777 - Heru Hidayat
               </a>
             </div>
 
