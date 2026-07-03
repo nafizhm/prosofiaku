@@ -515,7 +515,7 @@ function Home() {
                         <h2 className="text-3xl font-bold text-yellow-500">
                             IDR 2.000.000 <span className="text-sm font-normal text-gray-500"></span>
                         </h2>
-                        <p className="text-sm font-medium text-gray-700 mt-1">Paket Penjualan Kavling</p>
+                        <p className="text-sm font-medium text-gray-700 mt-1"><b>Penjualan Kavling Perumahan</b></p>
                         <p className="text-gray-500 text-sm">Paket aplikasi manajemen penjulan tahah kavling versi lengkap terbaru update 2026</p>
                         </div>
 
@@ -556,7 +556,7 @@ function Home() {
                         <h2 className="text-3xl font-bold text-yellow-500">
                             IDR 10.000.000 <span className="text-sm font-normal text-gray-500"></span>
                         </h2>
-                        <p className="text-sm font-medium text-gray-700 mt-1">Paket Silver</p>
+                        <p className="text-sm font-medium text-gray-700 mt-1"></b>Penjualan Kavling Pemakaman</b></p>
                         <p className="text-gray-500 text-sm">Paket aplikasi manajemen penjualan perumahan modul custom seuai kebutuhan dengan skema berlangganan</p>
                         </div>
 
