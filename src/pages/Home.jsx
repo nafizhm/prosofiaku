@@ -516,13 +516,15 @@ function Home() {
                             IDR 2.000.000 <span className="text-sm font-normal text-gray-500"></span>
                         </h2>
                         <p className="text-sm font-medium text-gray-700 mt-1">Paket Penjualan Kavling</p>
-                        <p className="text-gray-500 text-sm">Paket aplikasi manajemen penjulan tahah kavling versi lengkap terbaru update 2025</p>
+                        <p className="text-gray-500 text-sm">Paket aplikasi manajemen penjulan tahah kavling versi lengkap terbaru update 2026</p>
                         </div>
 
                         <ul className="space-y-3 text-sm text-gray-800">
                         {[
-                            "Domain dan hosting 1 tahun",
+                            "Domain 1 tahun",
+                            "Hosting 1 tahun",
                             "Support 1 Tahun",
+                            "1 Siteplan Project",
                             "Modul Penjualan",
 
                         ].map((item, i) => (
