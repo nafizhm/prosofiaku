@@ -16,10 +16,10 @@ function FloatingWhatsApp() {
   };
 
   return (
-    <div className="fixed bottom-5 right-5 z-20 flex flex-col items-end gap-2">
+    <div className="fixed bottom-4 right-4 md:bottom-5 md:right-5 z-20 flex flex-col items-end gap-2 max-w-[calc(100vw-2rem)]">
       {shouldRenderBox && (
         <div
-          className={`mb-3 w-72 bg-white rounded-xl shadow-lg transition-all duration-300 ease-in-out overflow-hidden
+          className={`mb-3 w-[min(18rem,calc(100vw-2rem))] bg-white rounded-xl shadow-lg transition-all duration-300 ease-in-out overflow-hidden
             ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}
           `}
         >
@@ -43,7 +43,7 @@ function FloatingWhatsApp() {
 
       <div className="flex items-center gap-2">
         <div
-          className={`text-sm text-gray-800 bg-white shadow-md rounded-full px-4 py-2 transition-all duration-500 ease-in-out
+          className={`hidden md:block text-sm text-gray-800 bg-white shadow-md rounded-full px-4 py-2 transition-all duration-500 ease-in-out
             ${isOpen ? 'opacity-0 translate-y-4 pointer-events-none' : 'opacity-100 translate-y-0'}
           `}
         >

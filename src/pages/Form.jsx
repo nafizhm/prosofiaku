@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import Footer from '../components/Footer';
 import Select from 'react-select';
-import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -11,7 +9,6 @@ function Form() {
   const [cities, setCities] = useState([]);
   const [selectedProvince, setSelectedProvince] = useState(null);
   const [selectedCity, setSelectedCity] = useState(null);
-  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     nama: '',
@@ -23,8 +20,7 @@ function Form() {
   });
 
   const API_BINDERBYTE = '9d625997676c62920bc7d64141a4df70ec99b8d555a7548d1cfce1f4a8344840';
-  const API_WATZAP = 'CQBZLJP8VFITUMIC';
-  const ADMIN_NUMBER = '6281230687104'; 
+  const ADMIN_NUMBER = '6282221992911';
 
   useEffect(() => {
     fetch(`https://api.binderbyte.com/wilayah/provinsi?api_key=${API_BINDERBYTE}`)
@@ -74,35 +70,8 @@ function Form() {
     `*Provinsi:* ${selectedProvince?.label || '-'}\n` +
     `*Kota/Kabupaten:* ${selectedCity?.label || '-'}`;
 
-  try {
-    const response = await axios.post('https://api.watzap.id/v1/send_message', {
-      api_key: 'CQBZLJP8VFITUMIC',
-      number_key: 'uGcdufWF62yz7NO4',
-      phone_no: '6281250274777',
-      message: message,
-      type: 'text'
-    });
-
-    console.log(response.data);
-
-   const msg = response.data.message?.toLowerCase();
-
-  if (response.status === 200) {
-    const msg = response.data.message?.toLowerCase();
-
-    if (msg.includes("delivery process") || response.data.status === true) {
-      navigate('/sukses');
-    } else {
-      alert("Gagal kirim pesan ke WA: " + response.data.message);
-    }
-  } else {
-    alert("Respon server tidak sesuai");
-  }
-
-  } catch (err) {
-    console.error('Error:', err);
-    alert("Terjadi error saat mengirim pesan WA");
-  }
+  const whatsappUrl = `https://wa.me/${ADMIN_NUMBER}?text=${encodeURIComponent(message)}`;
+  window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 };
 
   return (
