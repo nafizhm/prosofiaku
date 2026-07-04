@@ -21,6 +21,9 @@ import img3 from '../assets/gallery/3.webp';
 import img4 from '../assets/gallery/4.webp';
 import img5 from '../assets/gallery/5.webp';
 import img6 from '../assets/gallery/6.jpg';
+import testimonial1 from '../assets/testimonials/1.jpg';
+import testimonial2 from '../assets/testimonials/2.jpg';
+import testimonial3 from '../assets/testimonials/3.jpg';
 import DashboardIcon from '../assets/DashboardIcon.svg';
 import { FaMapMarkedAlt } from "react-icons/fa";
 
@@ -138,6 +141,7 @@ function Home() {
   ];
   const MotionDiv = motion.div;
   const images = [img1, img2, img3, img4, img5, img6];
+  const testimonialImages = [testimonial1, testimonial2, testimonial3];
   const [selectedImage, setSelectedImage] = useState(null);
 
   const imageRef = useRef(null);
@@ -178,6 +182,9 @@ function Home() {
             </h1>
             <p className="text-base leading-7 text-gray-700 md:text-lg" data-aos="fade" data-aos-duration="3000">
               Prosofia membantu developer properti merapikan data unit, customer, pembayaran, siteplan, hingga laporan dalam satu sistem berbasis web. Tidak perlu lagi bergantung pada catatan manual, file Excel yang tercecer, atau update progress yang lambat.
+            </p>
+            <p className="text-sm md:text-base font-medium text-gray-600" data-aos="fade" data-aos-duration="3100">
+              Sudah digunakan lebih dari 70 developer kavling dan perumahan.
             </p>
             <div className="flex w-full flex-col md:w-auto md:flex-row gap-3 md:gap-4 justify-center" data-aos="fade" data-aos-duration="3000">
               <button
@@ -314,7 +321,7 @@ function Home() {
                 </div>
               </div>
 
-              <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-2 text-center md:text-left">
                 Manajemen Kavling
               </h3>
               <p className="text-gray-600 text-sm md:text-base leading-6">
@@ -330,7 +337,7 @@ function Home() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-2 text-center md:text-left">
                 Manajemen Konsumen
               </h3>
               <p className="text-gray-600 text-md">
@@ -346,7 +353,7 @@ function Home() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-2 text-center md:text-left">
                 Simulasi & Jadwal Pembayaran
               </h3>
               <p className="text-gray-600 text-md">
@@ -362,7 +369,7 @@ function Home() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-2 text-center md:text-left">
                 Dokumentasi & Pengarsipan
               </h3>
               <p className="text-gray-600 text-md">
@@ -378,7 +385,7 @@ function Home() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-2 text-center md:text-left">
                 Invoice & Kuitansi Otomatis
               </h3>
               <p className="text-gray-600 text-md">
@@ -394,7 +401,7 @@ function Home() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-2 text-center md:text-left">
                 Siteplan Dinamis
               </h3>
               <p className="text-gray-600 text-md">
@@ -410,7 +417,7 @@ function Home() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-2 text-center md:text-left">
                 Pengelolaan Keuangan
               </h3>
               <p className="text-gray-600 text-md">
@@ -426,7 +433,7 @@ function Home() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-2 text-center md:text-left">
                 Stok Obname Bangunan
               </h3>
               <p className="text-gray-600 text-md">
@@ -442,7 +449,7 @@ function Home() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-2 text-center md:text-left">
                 Pengelolaan Gudang Material
               </h3>
               <p className="text-gray-600 text-md">
@@ -471,7 +478,7 @@ function Home() {
                 </div>
               </div>
 
-              <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2 leading-7">
+              <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2 leading-7 text-center md:text-left">
                 User friendly - mudah dipahami admin, sales, hingga owner tanpa butuh proses adaptasi yang rumit.
               </h3>
             </div>
@@ -484,7 +491,7 @@ function Home() {
                 </div>
               </div>
 
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center md:text-left">
                 Data real-time - perubahan status unit, pembayaran, dan progress proyek bisa langsung dipantau saat itu juga.
               </h3>
             </div>
@@ -497,7 +504,7 @@ function Home() {
                 </div>
               </div>
 
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center md:text-left">
                 Aman dan terproteksi - data penting perusahaan tersimpan lebih rapi dan tidak mudah tercecer di banyak file atau perangkat.
               </h3>
             </div>
@@ -510,7 +517,7 @@ function Home() {
                 </div>
               </div>
 
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center md:text-left">
                 Terintegrasi - alur dari sales, admin, pembayaran, hingga laporan saling terhubung dalam satu sistem.
               </h3>
             </div>
@@ -523,7 +530,7 @@ function Home() {
                 </div>
               </div>
 
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center md:text-left">
                 Hak akses fleksibel - setiap pengguna dapat diberi akses sesuai peran dan tanggung jawabnya.
               </h3>
             </div>
@@ -536,7 +543,7 @@ function Home() {
                 </div>
               </div>
 
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center md:text-left">
                 Fleksibel untuk bertumbuh - cocok untuk developer skala kecil, berkembang, hingga operasional yang lebih kompleks.
               </h3>
             </div>
@@ -709,23 +716,17 @@ function Home() {
               autoplay={{ delay: 5000 }}
               loop={true}
             >
-              <SwiperSlide>
-                <div className="bg-yellow-50 border border-yellow-100 p-6 md:p-8 rounded-xl shadow-md">
-                  <p className="text-gray-700 italic text-base md:text-lg leading-relaxed mb-4">
-                    "Sebelumnya data penjualan dan pembayaran kami tersebar di beberapa file. Setelah memakai Prosofia, admin lebih cepat mencari data, status kavling lebih jelas, dan owner lebih mudah memantau laporan proyek di Cirebon."
-                  </p>
-                  <h4 className="text-right font-semibold text-yellow-600">- PT Jaya Graha Sentosa</h4>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="bg-yellow-50 border border-yellow-100 p-6 md:p-8 rounded-xl shadow-md">
-                  <p className="text-gray-700 italic text-base md:text-lg leading-relaxed mb-4">
-                    "Yang paling terasa adalah tim admin tidak lagi repot menyusun invoice dan mengecek histori pembayaran satu per satu. Proses kerja jadi lebih ringan dan lebih enak dipakai oleh tim harian."
-                  </p>
-                  <h4 className="text-right font-semibold text-yellow-600">- CV Pelita Permai</h4>
-                </div>
-              </SwiperSlide>
+              {testimonialImages.map((imageSrc, index) => (
+                <SwiperSlide key={index}>
+                  <div className="bg-white border border-gray-200 p-3 md:p-4 rounded-2xl shadow-md">
+                    <img
+                      src={imageSrc}
+                      alt={`Testimoni pelanggan ${index + 1}`}
+                      className="w-full h-auto rounded-xl object-cover"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </section>
