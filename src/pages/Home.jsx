@@ -58,7 +58,7 @@ function Home() {
     },
     {
       name: 'Kavling Pemakaman',
-      price: 'IDR 3.000.000',
+      price: 'IDR 4.000.000',
       description: 'Dirancang untuk pengelolaan kavling pemakaman dengan alur data yang lebih tertib, cepat dicari, dan mudah dipantau.',
       legacyFeatures: [
         'Domain 1 tahun',
